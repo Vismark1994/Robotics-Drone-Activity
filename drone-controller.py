@@ -192,8 +192,37 @@ def move_left():
 
 
 
+#TODO: Write a function that will cause the drone to turn right.
 
-''' 
+
+
+#TODO: Write a function that will cause the drone to move forward.
+
+
+
+#TODO: Write a function that will cause the drone to move backward.
+
+
+
+#TODO: Write a function that will cause the drone to move up.
+
+
+
+#TODO: Write a function that will cause the drone to move down.
+
+
+
+#TODO: Write a function that will cause the drone to fly to the left.
+
+
+
+#TODO: Write a function that will cause the dron to fly to the right.
+
+
+
+
+
+'''   #ANSWERS ARE BELOW
 def move_left():
     global seqno
     ROLL = -1082130432
@@ -267,7 +296,7 @@ def descend():
         sendCommand("AT*PCMD=%d,%d,%d,%d,%d,%d\r" % (seqno,1,ROLL,PITCH,GAZ,YAW))
 
 
-def yaw_left():
+def yaw_left(): #move left
     global seqno
     ROLL = 0
     PITCH = 0
@@ -279,7 +308,7 @@ def yaw_left():
 
 
 
-def yaw_right():
+def yaw_right(): #move right
     global seqno
     ROLL = 0
     PITCH = 0
@@ -331,21 +360,21 @@ while True:
     elif ch == 'l':
         land()
     elif ch == 'u':
-        ascend()
+         pass #ascend()
     elif ch == 'j': 
-        descend()
+        pass #descend()
     elif ch == 'h':
-        move_left()
+        pass #move_left()
     elif ch == 'k':
-        move_right()
+        pass #move_right()
     elif ch == 'y':
-        move_forwards()
+        pass #move_forwards()
     elif ch == 'n':
-        move_backwards()
+        pass #move_backwards()
     elif ch == 'z':
-        yaw_left()
+        pass #yaw_left()
     elif ch == 'm':
-        yaw_right()   
+        pass #yaw_right()   
     elif ch == ' ':
         reset()
         toggleEmergencyMode()   
